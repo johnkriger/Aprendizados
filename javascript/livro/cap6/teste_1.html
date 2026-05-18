@@ -1,0 +1,19 @@
+<script>
+const cidades = ['Pelotas', 'São Jerônimo', 'Quitéria', 'Palmeira']
+for (let i = 0; i < cidades.length; i++) {
+	console.log(cidades[i])
+}
+
+console.log('-'.repeat(50))
+console.log(cidades.toString())
+console.log('-'.repeat(50))
+console.log(cidades.join(' / '))
+console.log('-'.repeat(50))
+for (const cidade of cidades) {
+    console.log(cidade)
+}
+console.log('-'.repeat(50))
+cidades.forEach((cidade, i) => {
+    console.log(`${i + 1}ª cidade: ${cidade}`)
+})
+</script>

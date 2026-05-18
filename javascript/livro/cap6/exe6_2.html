@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/jpg" href="img/numero.jpg">
+    <title>Caça_números</title>
+</head>
+<body>
+    <img src="img/numero.jpg" alt="Número" class="alta">
+    <h1>Caça-Números</h1>
+    <form>
+        <p>Número:
+            <input type="number" id="inNumero" min="1" max="100" step="1" required autofocus>
+            <input type="submit" value="Apostar" id="btSubmit">
+            <input type="submit" value="Jogar Novamente" id="btNovo" class="oculta">
+        </p>
+    </form>
+    <h3>Erros: <span id="outErros">0</span></h3>
+    <h3>Chances: <span id="outChances">6</span></h3>
+    <h3 id="outDica" class="italico">Dica: É um número entre 1 e 100</h3>
+
+    <script src="js/exe6_2.js"></script>
+</body>
+</html>
