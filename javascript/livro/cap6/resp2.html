@@ -1,0 +1,33 @@
+<!-- 
+ 1) Campo para adição de números
+ 2) Botão para adicionar números
+ 3) Números repetidos não são permitidos
+ 4) Exibir os números adicionados
+ 5) Botão de análisar se os números estão em ordem crescente
+  -->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/jpg" href="img/numero.jpg">
+    <title>Document</title>
+ </head>
+ <body>
+    <img src="img/numero.jpg" alt="Números" class="alta">
+    <h1>Ordem</h1>
+    <form>
+        <p>
+            Número: 
+            <input type="number" id="inNumero" min="1" step="1" required autofocus>
+            <input type="submit" value="Adicionar">
+        </p>
+        <input type="button" value="Verificar Ordem" id="btOrdem">
+    </form>
+
+    <pre></pre>
+
+    <script src="js/resp2.js"></script>
+ </body>
+ </html>
