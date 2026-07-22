@@ -1,0 +1,40 @@
+<!-- 
+ 1) Receber nomes e número de acertos de cada aluno
+ 2) Botão de enviar os dados (não permitir dados em branco)
+ 3) Listar os dados a cada inclusão
+ 4) Botão "Aprovados 2ª Fase" para validar notas e apresentar apenas os aprovados com notas em ordem decrescente
+ 5) Ao clicar no botão "Aprovados 2ª Fase" apresentar alert para inserir a nota de corte
+ 6) Não havendo aprovados exibir mensagem informando
+  -->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/jpg" href="img/gabarito-concurso.jpg">
+    <title>Concurso</title>
+ </head>
+ <body>
+    <img src="img/gabarito-concurso.jpg" alt="Gabarito de concurso" class="alta">
+    <h1>Concurso</h1>
+    <form>
+      <p>Nome: 
+         <input type="text" id="inNome" required autofocus>
+      </p>
+      <p>Quantidade de acertos: 
+         <input type="number" id="inAcertos" min="0" step="1" required>
+         <input type="submit" value="Adicionar">
+      </p>
+      <p>
+         <input type="button" value="Listar Todos" id="btListar">
+         <input type="button" value="Aprovados 2ª Fase" id="btAprovados">
+      </p>
+      
+   </form>
+
+   <pre></pre>
+   <script src="js/resp3.js"></script>
+   
+ </body>
+ </html>
