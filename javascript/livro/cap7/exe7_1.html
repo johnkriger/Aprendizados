@@ -1,0 +1,13 @@
+<script>
+    const anuncio = prompt('Anuncio: ') //lê o anuncio
+    let numPalavras = 0 //inicalização de variável
+
+    const tam = anuncio.length //obtém o tamanho
+
+    for (let i = 0; i < tam; i++) { //percorre o anúncio 
+        if (anuncio.charAt(i) == " ") { //verifica se a posição atual é um espaço em branco
+            numPalavras ++ //incrementa o contador de palavras
+        }
+    }
+    alert(`O anúncio tem ${numPalavras + 1} palavras.`)
+</script>
