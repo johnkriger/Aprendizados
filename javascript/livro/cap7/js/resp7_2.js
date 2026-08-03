@@ -6,16 +6,17 @@ frm.addEventListener('submit', (e) => { //ouvinte de evento
 
     let inverso = ''
     let retorno = ''
-    let frase = frm.inFrase.value //recebe a frase informada pelo usuário
-    frase = frase.toUpperCase()
+    const frase = frm.inFrase.value //recebe a frase informada pelo usuário
+    let fraseCopia = frase.toUpperCase()
+    fraseCopia = fraseCopia.replaceAll(' ', '')
 
-    for(let i = frase.length - 1; i >= 0; i--) {
-        inverso += frase[i]
+    for(let i = fraseCopia.length - 1; i >= 0; i--) {
+        inverso += fraseCopia[i]
     }
-    if(inverso == frase) {
-        retorno = `A frase "${frase}" é um palíndromo`
+    if(inverso == fraseCopia) {
+        retorno = `A frase "${frase.toUpperCase()}" é um palíndromo`
     } else {
-        retorno = `A frase "${frase}" não é um palíndromo`
+        retorno = `A frase "${frase.toUpperCase()}" não é um palíndromo`
     }
     resp.innerText = retorno
 })
