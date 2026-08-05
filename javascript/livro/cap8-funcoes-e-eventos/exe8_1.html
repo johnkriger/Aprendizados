@@ -1,0 +1,12 @@
+<script>
+    const situacao = (nota, media = 7) => {
+        if(nota >= media) {
+            alert('Aprovado, não fez mais que a obrigação!')
+        } else {
+            alert('Reprovado, é muito burro!')
+        }
+    }
+    const prova1 = Number(prompt('Qual a nota? '))
+
+    situacao(prova1, 7) //chama função passando parâmetros
+</script>
