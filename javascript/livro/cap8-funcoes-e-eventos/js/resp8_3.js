@@ -36,10 +36,11 @@ frm.addEventListener('submit', (e) => { //ouvinte de ação
 const calcularDesconto = (valor, opcao = null) => { 
     let retorno
     if(opcao == 0) {
-        return valor * AMIGO
+        retorno = valor * AMIGO
     } else if (opcao == 1) {
-        return valor * SAUDE
+        retorno = valor * SAUDE
     } else {
-        return valor * SEM_CONVENIO
+        retorno = valor * SEM_CONVENIO
     }
+    return retorno
 }
