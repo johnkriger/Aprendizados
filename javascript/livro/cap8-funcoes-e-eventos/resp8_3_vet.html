@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/vet.jpg" type="image/jpg">
+    <title>Veterinária</title>
+</head>
+<body>
+    <img src="img/vet.jpg" alt="Veterinária com pet" class="alta">
+    <h1>Veterinária Top das Galáxias</h1>
+    <form>
+        <p>
+            Valor da vacina: 
+            <input type="number" id="inValor" min="0.01" step="0.01" required autofocus>
+        </p>
+        <p>
+            Possui convênio?
+            <input type="radio" name="Convenio" id="rbNao" checked autofocus> Não
+            <input type="radio" name="Convenio" id="rbSim"> Sim
+        </p>
+        <p>
+            Convênio:
+            <select id="inConvenio" class="oculta">
+                <option value="amigo">Amigo dos animais</option>
+                <option value="saude">Saúde Animal</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Calcular Desconto">
+        </p>
+    </form>
+    <h3></h3>
+    <script src="js/resp8_3.js"></script>
+</body>
+</html>
