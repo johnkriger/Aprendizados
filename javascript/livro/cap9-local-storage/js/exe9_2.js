@@ -32,7 +32,7 @@ const verificarClube = () => {
     if(localStorage.getItem('clube')) { //se já estiver salvo algum clube
         const clube = localStorage.getItem('clube') //obtém o nome do clube
         //conforme o clube, marca um dos elementos do input type radio
-        if(clube == 'Protugal') { //marca o checked no clube salvo na memória
+        if(clube == 'Portugal') { //marca o checked no clube salvo na memória
             inRadios[0].checked = true
         } else if(clube == 'Gremio') {
             inRadios[1].checked = true 
@@ -48,5 +48,25 @@ for(const inRadio of inRadios) {
     inRadio.addEventListener('change', trocarClube)
 }
 
+//function que conta as visitas do cliente
+const numVisitas = () => {
+    let visitas = Number(localStorage.getItem('visitas')) || 0
+    visitas ++
+
+    //inicia as visitas no localStorage
+    localStorage.setItem('visitas', Number(visitas))
+
+    // verifica se é a primeira visita do cliente
+    if(visitas == 1) {
+        return 'Olá, essa é sua primeira visita à loja.'
+    } else {
+        visitas++
+        return `Olá, essa é a sua visita de número ${visitas}. Que bom que voltou! Aproveite!!`
+    }
+}
+
 // ao carregar a página, verifica se cliente já selecionou clube anteriormente
 window.addEventListener('load', verificarClube)
+
+//chama a função que conta o número de visitas desse cliente na loja
+alert(numVisitas())
