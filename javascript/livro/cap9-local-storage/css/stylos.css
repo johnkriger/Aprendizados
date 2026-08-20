@@ -2,3 +2,6 @@ pre { font-size: 1.2em;}
 .cores-Portugal { color: red; background-color: gray;}
 .cores-Gremio { color: blue; background-color: white;}
 .cores-Real { color: greenyellow; background-color: orange;}
+.servico {text-align: right; color: gray;}
+.execucao {background-color: black; color: aliceblue;}
+h3 .oficina {font-style: italic;}
