@@ -6,3 +6,5 @@ img.moeda0-50 {height: 66px; width: 66px; margin-bottom: 5px;}
 img.moeda0-25 {height: 76px; width: 76px; margin-bottom: 5px;}
 img.moeda0-10 {height: 60px; width: 60px; margin-bottom: 5px;}
 .alinha-direita {text-align: right;}
+.italico-direita {font-style:italic; text-align:right;}
+td {text-align: center}
