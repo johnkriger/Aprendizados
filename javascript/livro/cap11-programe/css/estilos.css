@@ -1,6 +1,6 @@
 h1 {border-bottom-style: inset;}
 h5 {font-style: italic;}
 pre {font-style: italic; font-size: 1.1em;}
-figure {display:inline-block; font-size: 0.7em; margin: 5px}
+figure {display: inline-block; width: 38px; font-size: 0.7em; margin: 5px; text-align: center;}
 img.poltrona {width: 24px; height: 16px}
 .entre-letras {letter-spacing: 0.5em;}
