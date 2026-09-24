@@ -4,3 +4,4 @@ pre {font-style: italic; font-size: 1.1em;}
 figure {display: inline-block; width: 38px; font-size: 0.7em; margin: 5px; text-align: center;}
 img.poltrona {width: 24px; height: 16px}
 .entre-letras {letter-spacing: 0.5em;}
+#conteudo {width: 100%; height: 800px; border: 0;}
